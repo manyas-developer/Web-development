@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Meal Finder</h1>
+        
+        <div class="search-box">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for a meal...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+
+        <div id="message">
+
+            
+
+        </div>
+        <div id="results">
+            <!-- Start - Generate this html part inside Javascript and attach here -->
+            <div class="meal-card">
+                <img src="https://www.themealdb.com/images/media/meals/lgmnff1763789847.jpg" alt="kofta burgers">
+                <div class="meal-info">
+                    <h3>kofta burgers</h3>
+                    <p>Lamb - Turkish</p>
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+    </div>
+
+    <!-- Modal for meal details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+                <div id="modalBody">
+                 <!-- Start - Generate this html part inside Javascript and attach here -->
+
+                    <div class="modal-header">
+                        <img src="https://www.themealdb.com/images/media/meals/lgmnff1763789847.jpg" alt="kofta burgers">
+                        <h2>kofta burgers</h2>
+                        <p><strong>Category:</strong> Lamb | <strong>Area:</strong> Turkish</p>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>1kg Lamb</li>
+                            <li>2 Onion</li>
+                            <li>1 Garlic Bulb</li>
+                            <li>6 tablespoons Garam Masala</li>
+                            <li>Bunch Coriander</li>
+                            <li>1 tablespoon Chilli Sauce</li>
+                            <li>8 Pita Bread</li>
+                            <li>4 sliced Tomato</li>
+                            <li>1/2  Red Cabbage</li>
+                            <li>1 sliced Red Onions</li>
+                            <li>Small pack Yogurt</li>
+                        </ul>
+                        <h3>Instructions:</h3>
+                        <p>step 1 Tip the mince into a large bowl (use a clean washing-up bowl if you don’t have anything big enough) with all the other burger ingredients and a good pinch of salt. Roll up your sleeves, get your hands into the mix and squelch everything together through your fingers until completely mixed. Pat the mix into 16 small burgers. These may now be frozen for up to 1 month or chilled up to a day ahead.
+                            step 2
+                            To cook, heat grill to its highest setting and lay the burgers in a single layer on a baking tray (you may need to do this in batches, depending on how big your tray is). Grill on the highest shelf for 5-6 mins on each side until browned and cooked through. Pile burgers onto a platter and serve with all the accompaniments, so everyone can construct their own sandwich.
+                        </p>
+                    </div>
+                    <!-- End -->
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+     
+    </script>
+</body>
+</html>
