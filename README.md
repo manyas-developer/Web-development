@@ -5,3 +5,5 @@ The project is built using HTML, CSS, and JavaScript, focusing on clean UI and A
 
 Meal Finder is a beginner-friendly JavaScript project that demonstrates API fetching, DOM manipulation, and modal UI design. Users can search meals and view full recipe details including ingredients and instructions.
 
+Movie App is an IMDB-style web application that allows users to search movies using the OMDb API, view detailed information such as plot, ratings, and posters, watch trailers, and save favorite movies using localStorage. Built with HTML, CSS, and JavaScript.
+
