@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Country Finder • UI Skeleton</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <main class="container">
+    <h1>Country Finder</h1>
+    <p class="lead">Type any country and fetch details from the <strong>REST Countries</strong> API. Students will write the JavaScript to wire this up.</p>
+
+    <!-- SEARCH BAR (students: listen for submit and prevent default) -->
+    <form id="countryForm" class="search" autocomplete="off">
+      <label for="countryInput" class="sr-only">Country name</label>
+      <input id="countryInput" name="q" placeholder="e.g., Portugal" required />
+      <button id="searchBtn" type="submit">Search</button>
+      <div class="hint">Examples: India, Japan, United States, Brazil</div>
+    </form>
+
+    <!-- STATUS MESSAGES (students: toggle text + class: ok/err) -->
+    <div id="status" class="status" role="status" aria-live="polite">Waiting for a search…</div>
+
+    <!-- RESULT CARD (students: remove .hidden when data arrives) -->
+    <section id="resultCard" class="card hidden" aria-live="polite">
+      <div class="header">
+        <img id="flagImg" class="flag" alt="Flag" src="" />
+        <div class="title">
+          <h2 id="nameCommon">—</h2>
+          <p id="nameOfficial">—</p>
+          <div class="badges">
+            <span id="cca2" class="chip" title="ISO 3166-1 alpha-2">CCA2</span>
+            <span id="cca3" class="chip" title="ISO 3166-1 alpha-3">CCA3</span>
+            <span id="regionChip" class="chip">Region</span>
+            <span id="subregionChip" class="chip">Subregion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="grid">
+          <div class="stat">
+            <h3>Capital</h3>
+            <p id="capital">—</p>
+          </div>
+          <div class="stat">
+            <h3>Population</h3>
+            <p id="population">—</p>
+          </div>
+          <div class="stat">
+            <h3>Area</h3>
+            <p><span id="area">—</span> km²</p>
+          </div>
+          <div class="stat">
+            <h3>Timezones</h3>
+            <ul id="timezones" class="list"></ul>
+          </div>
+          <div class="stat">
+            <h3>Languages</h3>
+            <ul id="languages" class="list"></ul>
+          </div>
+          <div class="stat">
+            <h3>Currencies</h3>
+            <ul id="currencies" class="list"></ul>
+          </div>
+          <div class="stat">
+            <h3>Calling Code</h3>
+            <p id="callingCode">—</p>
+          </div>
+          <div class="stat">
+            <h3>Top‑Level Domains</h3>
+            <ul id="tld" class="list"></ul>
+          </div>
+          <div class="stat">
+            <h3>Borders</h3>
+            <div id="borders" class="badges"></div>
+          </div>
+        </div>
+
+        <div class="media">
+          <div>
+            <h3>Coat of Arms</h3>
+            <img id="coatImg" alt="Coat of arms" src="" />
+          </div>
+          <div>
+            <h3>Maps</h3>
+            <div class="links">
+              <a id="gmaps" href="#" target="_blank" rel="noopener">Open in Google Maps</a>
+              <a id="osmaps" href="#" target="_blank" rel="noopener">Open in OpenStreetMap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot">
+        <span>FIFA: <strong id="fifa">—</strong></span>
+        <span>Car side: <strong id="carSide">—</strong></span>
+        <span>Start of week: <strong id="startOfWeek">—</strong></span>
+      </div>
+    </section>
+
+    <!-- ERROR CARD (students: show this when API fails or no match) -->
+    <section id="errorCard" class="card hidden" aria-live="assertive">
+      <div class="body">
+        <p style="margin:0">No results. Check the spelling or try another country.</p>
+      </div>
+    </section>
+
+   
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
