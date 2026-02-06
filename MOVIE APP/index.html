@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>IMDB WEBSITE</h1>
+
+  <div class="search-box">
+    <input id="searchInput" type="text" placeholder="Search for movies..." onkeyup="liveSearch()" />
+    <button onclick="searchMovie()">Search</button>
+  </div>
+
+  <div id="suggestBox" class="suggest-box hidden"></div>
+</header>
+
+<main>
+  <h2 class="section-title">Movies</h2>
+  <div id="movieContainer" class="movie-container"></div>
+
+  <h2 class="section-title">⭐ Favorites</h2>
+  <div id="favContainer" class="movie-container"></div>
+</main>
+
+<!-- DETAILS OVERLAY (HIDDEN BY DEFAULT) -->
+<div id="movieDetails" class="details-overlay hidden">
+
+  <div class="details-card">
+
+    <button onclick="closeDetails()" class="back-btn">⬅ Back to Search</button>
+
+    <div class="details-body">
+
+      <img id="detailsPoster">
+
+      <div class="details-text">
+        <h2 id="detailsTitle"></h2>
+        <p id="detailsPlot"></p>
+        <p id="detailsRating"></p>
+
+        <button id="favBtn" class="fav-btn">❤️ Add to Favorites</button>
+        <button id="trailerBtn" class="trailer-btn">🎥 Watch Trailer</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
