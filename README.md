@@ -3,4 +3,5 @@ This repository contains multiple beginner-friendly web development projects bui
 Country Finder is a simple and responsive web app that fetches real-time country data from the REST Countries API. Users can search for a country and view details such as flag, capital, population, region, languages, currencies, time zones, borders, and map links.
 The project is built using HTML, CSS, and JavaScript, focusing on clean UI and API integration.
 
+Meal Finder is a beginner-friendly JavaScript project that demonstrates API fetching, DOM manipulation, and modal UI design. Users can search meals and view full recipe details including ingredients and instructions.
 
