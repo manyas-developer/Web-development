@@ -7,3 +7,5 @@ Meal Finder is a beginner-friendly JavaScript project that demonstrates API fetc
 
 Movie App is an IMDB-style web application that allows users to search movies using the OMDb API, view detailed information such as plot, ratings, and posters, watch trailers, and save favorite movies using localStorage. Built with HTML, CSS, and JavaScript.
 
+It also contains multiple basic html,css and javascript projects
+
